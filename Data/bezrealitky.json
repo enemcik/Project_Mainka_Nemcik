@@ -1,0 +1,202 @@
+{
+    "0": {
+        "Size": "3+1",
+        "m2": "85",
+        "Street": " Vltavska",
+        "District": " Praha - Smichov",
+        "Base Price": 11000,
+        "Utilities Price": 2000,
+        "Total Price": 13000,
+        "Source": "bezrealitky.cz"
+    },
+    "1": {
+        "Size": "1+1",
+        "m2": "32",
+        "Street": " Malirska",
+        "District": " Praha - Bubenec",
+        "Base Price": 12000,
+        "Utilities Price": 1650,
+        "Total Price": 13650,
+        "Source": "bezrealitky.cz"
+    },
+    "2": {
+        "Size": "1+1",
+        "m2": "32",
+        "Street": " Malirska",
+        "District": " Praha - Bubenec",
+        "Base Price": 8000,
+        "Utilities Price": 0,
+        "Total Price": 8000,
+        "Source": "bezrealitky.cz"
+    },
+    "3": {
+        "Size": "1+1",
+        "m2": "32",
+        "Street": " Malirska",
+        "District": " Praha - Bubenec",
+        "Base Price": 17900,
+        "Utilities Price": 3500,
+        "Total Price": 21400,
+        "Source": "bezrealitky.cz"
+    },
+    "4": {
+        "Size": "1+1",
+        "m2": "32",
+        "Street": " Malirska",
+        "District": " Praha - Bubenec",
+        "Base Price": 18000,
+        "Utilities Price": 2500,
+        "Total Price": 20500,
+        "Source": "bezrealitky.cz"
+    },
+    "5": {
+        "Size": "1+1",
+        "m2": "32",
+        "Street": " Malirska",
+        "District": " Praha - Bubenec",
+        "Base Price": 8000,
+        "Utilities Price": 2500,
+        "Total Price": 10500,
+        "Source": "bezrealitky.cz"
+    },
+    "6": {
+        "Size": "1+1",
+        "m2": "32",
+        "Street": " Malirska",
+        "District": " Praha - Bubenec",
+        "Base Price": 13000,
+        "Utilities Price": 2000,
+        "Total Price": 15000,
+        "Source": "bezrealitky.cz"
+    },
+    "7": {
+        "Size": "1+kk",
+        "m2": "32",
+        "Street": " Kotevni",
+        "District": " Praha - Smichov",
+        "Base Price": 13000,
+        "Utilities Price": 3000,
+        "Total Price": 16000,
+        "Source": "bezrealitky.cz"
+    },
+    "8": {
+        "Size": "1+kk",
+        "m2": "32",
+        "Street": " Kotevni",
+        "District": " Praha - Smichov",
+        "Base Price": 8800,
+        "Utilities Price": 2500,
+        "Total Price": 11300,
+        "Source": "bezrealitky.cz"
+    },
+    "9": {
+        "Size": "1+kk",
+        "m2": "32",
+        "Street": " Kotevni",
+        "District": " Praha - Smichov",
+        "Base Price": 9000,
+        "Utilities Price": 1250,
+        "Total Price": 10250,
+        "Source": "bezrealitky.cz"
+    },
+    "10": {
+        "Size": "2+kk",
+        "m2": "40",
+        "Street": " Vlkova",
+        "District": " Praha - Zizkov",
+        "Base Price": 12900,
+        "Utilities Price": 700,
+        "Total Price": 13600,
+        "Source": "bezrealitky.cz"
+    },
+    "11": {
+        "Size": "2+kk",
+        "m2": "40",
+        "Street": " Vlkova",
+        "District": " Praha - Zizkov",
+        "Base Price": 11900,
+        "Utilities Price": 2200,
+        "Total Price": 14100,
+        "Source": "bezrealitky.cz"
+    },
+    "12": {
+        "Size": "2+kk",
+        "m2": "40",
+        "Street": " Vlkova",
+        "District": " Praha - Zizkov",
+        "Base Price": 11000,
+        "Utilities Price": 4000,
+        "Total Price": 15000,
+        "Source": "bezrealitky.cz"
+    },
+    "13": {
+        "Size": "2+kk",
+        "m2": "40",
+        "Street": " Vlkova",
+        "District": " Praha - Zizkov",
+        "Base Price": 7200,
+        "Utilities Price": 2500,
+        "Total Price": 9700,
+        "Source": "bezrealitky.cz"
+    },
+    "14": {
+        "Size": "2+kk",
+        "m2": "40",
+        "Street": " Vlkova",
+        "District": " Praha - Zizkov",
+        "Base Price": 11000,
+        "Utilities Price": 3500,
+        "Total Price": 14500,
+        "Source": "bezrealitky.cz"
+    },
+    "15": {
+        "Size": "1+kk",
+        "m2": "40",
+        "Street": " Milose Havla",
+        "District": " Praha - Hlubocepy",
+        "Base Price": 11000,
+        "Utilities Price": 2000,
+        "Total Price": 13000,
+        "Source": "bezrealitky.cz"
+    },
+    "16": {
+        "Size": "1+kk",
+        "m2": "40",
+        "Street": " Milose Havla",
+        "District": " Praha - Hlubocepy",
+        "Base Price": 30000,
+        "Utilities Price": 3000,
+        "Total Price": 33000,
+        "Source": "bezrealitky.cz"
+    },
+    "17": {
+        "Size": "1+kk",
+        "m2": "40",
+        "Street": " Milose Havla",
+        "District": " Praha - Hlubocepy",
+        "Base Price": 21000,
+        "Utilities Price": 3500,
+        "Total Price": 24500,
+        "Source": "bezrealitky.cz"
+    },
+    "18": {
+        "Size": "2+kk",
+        "m2": "40",
+        "Street": " Jaurisova",
+        "District": " Praha - Nusle",
+        "Base Price": 17000,
+        "Utilities Price": 5000,
+        "Total Price": 22000,
+        "Source": "bezrealitky.cz"
+    },
+    "19": {
+        "Size": "2+kk",
+        "m2": "29",
+        "Street": " Belohorska",
+        "District": " Praha - Brevnov",
+        "Base Price": 13490,
+        "Utilities Price": 2300,
+        "Total Price": 15790,
+        "Source": "bezrealitky.cz"
+    }
+}

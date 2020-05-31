@@ -1,0 +1,402 @@
+{
+    "20": {
+        "Size": "1+kk",
+        "m2": "28",
+        "Street": "Honzikova",
+        "District": "Praha 10 - Dolni Mecholupy",
+        "Base Price": 10500,
+        "Utilities Price": 0,
+        "Total Price": 10500,
+        "Source": "reality.idnes.cz"
+    },
+    "21": {
+        "Size": "1+kk",
+        "m2": "31",
+        "Street": "Zahradnickova",
+        "District": "Praha 5 - Kosire",
+        "Base Price": 10000,
+        "Utilities Price": 0,
+        "Total Price": 10000,
+        "Source": "reality.idnes.cz"
+    },
+    "22": {
+        "Size": "1+kk",
+        "m2": "20",
+        "Street": "Danielova",
+        "District": "Praha 9 - Cakovice",
+        "Base Price": 5000,
+        "Utilities Price": 0,
+        "Total Price": 5000,
+        "Source": "reality.idnes.cz"
+    },
+    "23": {
+        "Size": "1+kk",
+        "m2": "34",
+        "Street": "Sicherova",
+        "District": "Praha 9 - Kyje",
+        "Base Price": 11500,
+        "Utilities Price": 0,
+        "Total Price": 11500,
+        "Source": "reality.idnes.cz"
+    },
+    "24": {
+        "Size": "2+kk",
+        "m2": "50",
+        "Street": "Nad prehradou",
+        "District": "Praha 10 - Horni Mecholupy",
+        "Base Price": 15000,
+        "Utilities Price": 0,
+        "Total Price": 15000,
+        "Source": "reality.idnes.cz"
+    },
+    "25": {
+        "Size": "3+kk",
+        "m2": "100",
+        "Street": "Liliova",
+        "District": "Praha 1 - Stare Mesto",
+        "Base Price": 30000,
+        "Utilities Price": 0,
+        "Total Price": 30000,
+        "Source": "reality.idnes.cz"
+    },
+    "26": {
+        "Size": "2+kk",
+        "m2": "72",
+        "Street": "Za sokolovnou",
+        "District": "Praha 6 - Suchdol",
+        "Base Price": 18500,
+        "Utilities Price": 0,
+        "Total Price": 18500,
+        "Source": "reality.idnes.cz"
+    },
+    "27": {
+        "Size": "1+1",
+        "m2": "46",
+        "Street": "Viktora Huga",
+        "District": "Praha 5 - Smichov",
+        "Base Price": 12900,
+        "Utilities Price": 0,
+        "Total Price": 12900,
+        "Source": "reality.idnes.cz"
+    },
+    "28": {
+        "Size": "2+kk",
+        "m2": "66",
+        "Street": "Dejvicka",
+        "District": "Praha 6 - Dejvice",
+        "Base Price": 16500,
+        "Utilities Price": 0,
+        "Total Price": 16500,
+        "Source": "reality.idnes.cz"
+    },
+    "29": {
+        "Size": "4+kk",
+        "m2": "100",
+        "Street": "Krakovska",
+        "District": "Praha 1 - Nove Mesto",
+        "Base Price": 25000,
+        "Utilities Price": 0,
+        "Total Price": 25000,
+        "Source": "reality.idnes.cz"
+    },
+    "30": {
+        "Size": "5+kk",
+        "m2": "160",
+        "Street": "Narodni",
+        "District": "Praha 1 - Nove Mesto",
+        "Base Price": 25000,
+        "Utilities Price": 0,
+        "Total Price": 25000,
+        "Source": "reality.idnes.cz"
+    },
+    "31": {
+        "Size": "3+kk",
+        "m2": "90",
+        "Street": "Karoliny Svetle",
+        "District": "Praha 1 - Stare Mesto",
+        "Base Price": 25000,
+        "Utilities Price": 0,
+        "Total Price": 25000,
+        "Source": "reality.idnes.cz"
+    },
+    "32": {
+        "Size": "1+kk",
+        "m2": "27",
+        "Street": "Elisky Krasnohorske",
+        "District": "Praha 1 - Josefov",
+        "Base Price": 15000,
+        "Utilities Price": 0,
+        "Total Price": 15000,
+        "Source": "reality.idnes.cz"
+    },
+    "33": {
+        "Size": "3+1",
+        "m2": "115",
+        "Street": "Elisky Krasnohorske",
+        "District": "Praha 1 - Josefov",
+        "Base Price": 42000,
+        "Utilities Price": 0,
+        "Total Price": 42000,
+        "Source": "reality.idnes.cz"
+    },
+    "34": {
+        "Size": "2+1",
+        "m2": "60",
+        "Street": "Malovicka",
+        "District": "Praha 4 - Zabehlice",
+        "Base Price": 13000,
+        "Utilities Price": 0,
+        "Total Price": 13000,
+        "Source": "reality.idnes.cz"
+    },
+    "35": {
+        "Size": "2+kk",
+        "m2": "37",
+        "Street": "Mantovska",
+        "District": "Praha 10 - Horni Mecholupy",
+        "Base Price": 13000,
+        "Utilities Price": 0,
+        "Total Price": 13000,
+        "Source": "reality.idnes.cz"
+    },
+    "36": {
+        "Size": "2+kk",
+        "m2": "46",
+        "Street": "5. kvetna",
+        "District": "Praha 4 - Nusle",
+        "Base Price": 11000,
+        "Utilities Price": 0,
+        "Total Price": 11000,
+        "Source": "reality.idnes.cz"
+    },
+    "37": {
+        "Size": "2+kk",
+        "m2": "69",
+        "Street": "V Zelenem udoli",
+        "District": "Praha 4 - Kunratice",
+        "Base Price": 15100,
+        "Utilities Price": 0,
+        "Total Price": 15100,
+        "Source": "reality.idnes.cz"
+    },
+    "38": {
+        "Size": "1+1",
+        "m2": "41",
+        "Street": "Novakovych",
+        "District": "Praha 8 - Liben",
+        "Base Price": 13000,
+        "Utilities Price": 0,
+        "Total Price": 13000,
+        "Source": "reality.idnes.cz"
+    },
+    "39": {
+        "Size": "1+1",
+        "m2": "38",
+        "Street": "Viktora Huga",
+        "District": "Praha 5 - Smichov",
+        "Base Price": 11900,
+        "Utilities Price": 0,
+        "Total Price": 11900,
+        "Source": "reality.idnes.cz"
+    },
+    "40": {
+        "Size": "1+1",
+        "m2": "46",
+        "Street": "Viktora Huga",
+        "District": "Praha 5 - Smichov",
+        "Base Price": 12900,
+        "Utilities Price": 0,
+        "Total Price": 12900,
+        "Source": "reality.idnes.cz"
+    },
+    "41": {
+        "Size": "4+kk",
+        "m2": "107",
+        "Street": "Truhlarska",
+        "District": "Praha 1 - Nove Mesto",
+        "Base Price": 42000,
+        "Utilities Price": 0,
+        "Total Price": 42000,
+        "Source": "reality.idnes.cz"
+    },
+    "42": {
+        "Size": "4+1",
+        "m2": "120",
+        "Street": "Krakovska",
+        "District": "Praha 1 - Nove Mesto",
+        "Base Price": 25000,
+        "Utilities Price": 0,
+        "Total Price": 25000,
+        "Source": "reality.idnes.cz"
+    },
+    "43": {
+        "Size": "4+kk",
+        "m2": "130",
+        "Street": "Krakovska",
+        "District": "Praha 1 - Nove Mesto",
+        "Base Price": 25000,
+        "Utilities Price": 0,
+        "Total Price": 25000,
+        "Source": "reality.idnes.cz"
+    },
+    "44": {
+        "Size": "4+kk",
+        "m2": "145",
+        "Street": "Krakovska",
+        "District": "Praha 1 - Nove Mesto",
+        "Base Price": 25000,
+        "Utilities Price": 0,
+        "Total Price": 25000,
+        "Source": "reality.idnes.cz"
+    },
+    "45": {
+        "Size": "1+1",
+        "m2": "46",
+        "Street": "Viktora Huga",
+        "District": "Praha 5 - Smichov",
+        "Base Price": 12900,
+        "Utilities Price": 0,
+        "Total Price": 12900,
+        "Source": "reality.idnes.cz"
+    },
+    "46": {
+        "Size": "1+kk",
+        "m2": "34",
+        "Street": "Viktora Huga",
+        "District": "Praha 5 - Smichov",
+        "Base Price": 11900,
+        "Utilities Price": 0,
+        "Total Price": 11900,
+        "Source": "reality.idnes.cz"
+    },
+    "47": {
+        "Size": "4+1",
+        "m2": "130",
+        "Street": "Krakovska",
+        "District": "Praha 1 - Nove Mesto",
+        "Base Price": 25000,
+        "Utilities Price": 0,
+        "Total Price": 25000,
+        "Source": "reality.idnes.cz"
+    },
+    "48": {
+        "Size": "atypickeho",
+        "m2": "15",
+        "Street": "Formanska",
+        "District": "Praha 4 - Ujezd u Pruhonic",
+        "Base Price": 4500,
+        "Utilities Price": 0,
+        "Total Price": 4500,
+        "Source": "reality.idnes.cz"
+    },
+    "49": {
+        "Size": "1+kk",
+        "m2": "32",
+        "Street": "Reznicka",
+        "District": "Praha 1 - Nove Mesto",
+        "Base Price": 15000,
+        "Utilities Price": 0,
+        "Total Price": 15000,
+        "Source": "reality.idnes.cz"
+    },
+    "50": {
+        "Size": "2+1",
+        "m2": "65",
+        "Street": "Opatovicka",
+        "District": "Praha 1 - Nove Mesto",
+        "Base Price": 15000,
+        "Utilities Price": 0,
+        "Total Price": 15000,
+        "Source": "reality.idnes.cz"
+    },
+    "51": {
+        "Size": "3+1",
+        "m2": "85",
+        "Street": "Jaromirova",
+        "District": "Praha 2 - Nusle",
+        "Base Price": 30500,
+        "Utilities Price": 0,
+        "Total Price": 30500,
+        "Source": "reality.idnes.cz"
+    },
+    "52": {
+        "Size": "5+kk",
+        "m2": "107",
+        "Street": "Koubkova",
+        "District": "Praha 2 - Vinohrady",
+        "Base Price": 50000,
+        "Utilities Price": 0,
+        "Total Price": 50000,
+        "Source": "reality.idnes.cz"
+    },
+    "53": {
+        "Size": "4+kk",
+        "m2": "166",
+        "Street": "Terronska",
+        "District": "Praha 6 - Bubenec",
+        "Base Price": 36000,
+        "Utilities Price": 0,
+        "Total Price": 36000,
+        "Source": "reality.idnes.cz"
+    },
+    "54": {
+        "Size": "3+kk",
+        "m2": "120",
+        "Street": "Janackovo nabrezi",
+        "District": "Praha 5 - Smichov",
+        "Base Price": 55000,
+        "Utilities Price": 0,
+        "Total Price": 55000,
+        "Source": "reality.idnes.cz"
+    },
+    "55": {
+        "Size": "1+1",
+        "m2": "32",
+        "Street": "Vrbova",
+        "District": "Praha 4 - Branik",
+        "Base Price": 10500,
+        "Utilities Price": 0,
+        "Total Price": 10500,
+        "Source": "reality.idnes.cz"
+    },
+    "56": {
+        "Size": "2+kk",
+        "m2": "50",
+        "Street": "Slavojova",
+        "District": "Praha 2 - Nusle",
+        "Base Price": 15000,
+        "Utilities Price": 0,
+        "Total Price": 15000,
+        "Source": "reality.idnes.cz"
+    },
+    "57": {
+        "Size": "2+kk",
+        "m2": "50",
+        "Street": "Slavojova",
+        "District": "Praha 2 - Nusle",
+        "Base Price": 15000,
+        "Utilities Price": 0,
+        "Total Price": 15000,
+        "Source": "reality.idnes.cz"
+    },
+    "58": {
+        "Size": "3+kk",
+        "m2": "100",
+        "Street": "Zverinova",
+        "District": "Praha 3 - Strasnice",
+        "Base Price": 22000,
+        "Utilities Price": 0,
+        "Total Price": 22000,
+        "Source": "reality.idnes.cz"
+    },
+    "59": {
+        "Size": "2+kk",
+        "m2": "111",
+        "Street": "Borsov",
+        "District": "Praha 1 - Stare Mesto",
+        "Base Price": 18000,
+        "Utilities Price": 0,
+        "Total Price": 18000,
+        "Source": "reality.idnes.cz"
+    }
+}
