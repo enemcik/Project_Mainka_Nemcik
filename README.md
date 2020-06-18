@@ -1,6 +1,6 @@
 # Project of Erik Nemcik & Paul Mainka
 
-## For Charles University of Prague, Fakulty of social sciences - Data Processing in Python (JEM207)
+## For Charles University of Prague, Faculty of social sciences - Data Processing in Python (JEM207)
 
 ### Data source: bezrealitky.cz & reality.idnes.cz 
 Disclaimer: We used these data sources for a soley We have used the data processed by us exclusively for academic purposes and have  not received any monetary gain from it. Furthermore, the data represents only a snapshot of the rental situation in Prague, that is, at the time we scraped it (June 2020).
