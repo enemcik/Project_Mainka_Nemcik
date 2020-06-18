@@ -3,7 +3,7 @@
 ## For Charles University of Prague, Faculty of Social Sciences - Data Processing in Python (JEM207)
 
 ### Data source: bezrealitky.cz & reality.idnes.cz 
-Disclaimer: We used these data sources for a soley We have used the data processed by us exclusively for academic purposes and have  not received any monetary gain from it. Furthermore, the data represents only a snapshot of the rental situation in Prague, that is, at the time we scraped it (June 2020).
+Disclaimer: We have used the data processed by us exclusively for academic purposes and have  not received any monetary gain from it. Furthermore, the data represents only a snapshot of the rental situation in Prague, that is, at the time we scraped it (June 2020).
 
 ### Procedure: 
 1. As a first step we scraped the data from bezrealitky.cz & reality.idnes.cz and stored it. This action is performed by the "DownloaderBezRealitky.py" script. This step may take some time (~30-90 min).
