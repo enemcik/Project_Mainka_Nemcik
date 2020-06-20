@@ -1,29 +1,16 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import os
+import platform
 import pandas as pd
 import folium
 import folium.plugins as plugins
 from folium.plugins import MarkerCluster
 from tqdm import tqdm
 
-
-# In[2]:
-
-
 fileDir = os.path.dirname(os.path.realpath('__file__'))
-
-
-# In[3]:
-
 
 def FoliumMap(df_):
     '''
-    Function creates a new, empty map with folium, the map doesnt contain any datapoints yet but is intialized at the mean latitude & longitude
+    Function creates a new, empty map with folium, the map doesnt contain any datapoints yet but is initialized at the mean latitude & longitude
     point in our dataset. Then adds data points = flats (markers) to the map. For each observation (=row) of the dataset we read the latitude & longitude
     to create an icon which will be a display for the flat on the map. Furthermore we add a pop up text with basic information about the flat
     to each icon. We create clusters to achieve better visualisation.
@@ -46,15 +33,14 @@ def FoliumMap(df_):
          icon=folium.Icon(icon='home'))) #define icon symbol
     new_map.add_child(mc) 
     new_map.save(outfile='folium_map.html') #saves file as html file in working directory
+    print('Granular map with specific apartments saved to the script directory: folium_map.html' )
     return new_map
 
-dataframe = pd.read_pickle(fileDir + '\\Data\\' +'geo_df.pkl') #load from here
+if platform.system() == 'Darwin':
+    dataframe = pd.read_pickle(fileDir + '/Data/' +'geo_df.pkl') #load from here
+else:
+    dataframe = pd.read_pickle(fileDir + '\\Data\\' +'geo_df.pkl') #load from here
 
 FoliumMap(dataframe)
-
-
-# In[ ]:
-
-
 
 

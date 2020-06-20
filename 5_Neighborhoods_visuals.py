@@ -1,12 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[22]:
-
-
 import os
 import pandas as pd
 import json
+import platform
 
 from bokeh.io import output_notebook, show, output_file
 from bokeh.plotting import figure
@@ -18,16 +13,10 @@ from bokeh.layouts import widgetbox, row, column
 import geopy
 import geopandas as gpd
 from geopy.extra.rate_limiter import RateLimiter
+import warnings
 
-
-# In[23]:
-
-
+warnings.filterwarnings('ignore')
 fileDir = os.path.dirname(os.path.realpath('__file__'))
-
-
-# In[24]:
-
 
 # This dictionary contains the formatting for the data in the plots, which will be used in the interactive neighborhood map
 format_data = [('Price', 10000, 25000,'0,0', 'Price'),
@@ -44,10 +33,6 @@ hover = HoverTool(tooltips = [ ('Neighborhood','@NAZEV_MC'),
                                ('Average m2', '@m2'),
                                ('Crown per m2', '@Avg_m2_price'),
                                ('Number of Apartments', '@Number_of_Apartments')])
-
-
-# In[25]:
-
 
 # Create a plotting function
 def make_plot(field_name, color='Reds'):
@@ -83,10 +68,6 @@ def make_plot(field_name, color='Reds'):
 
         return p
 
-
-# In[26]:
-
-
 def update_plot(attr, old, new):
     '''
     Callback function for make_plot(): Important for widget tools from Bokeh: Users when map is on the Web can select a criteria they want to have displayed
@@ -103,17 +84,14 @@ def update_plot(attr, old, new):
     curdoc().add_root(layout)
     geosource.geojson = new_data # Update the data
 
-    
-    
-
-
-# In[27]:
-
-
 '''Certain elements, like data, input_field (slection object) have to be defined outside of the make_plot function otherwise the update_plot function does not work.'''
 
-with open(fileDir + '\\Data\\merged_visuals_data.json', 'r', encoding='utf-8') as f:
-    json_data = json.load(f)
+if platform.system() == 'Darwin':
+    with open(fileDir + '/Data/merged_visuals_data.json', 'r', encoding='utf-8') as f:
+        json_data = json.load(f)
+else:
+    with open(fileDir + '\\Data\\merged_visuals_data.json', 'r', encoding='utf-8') as f:
+        json_data = json.load(f)
 # 
 geosource = GeoJSONDataSource(geojson = json_data)
 
@@ -132,13 +110,12 @@ layout = column(p, widgetbox(select))
 
 curdoc().add_root(layout)
 # Display the current document
+print('Here is your interactive map of Prague neighborhoods.')
 output_notebook()
 show(p)
 
-#bokeh serve --show Downloader.ipynb -in anaconda prompt shows interactive map in local server 
 
-
-# In[ ]:
+#bokeh serve --show Downloader.ipynb - in anaconda prompt shows interactive map on a local server - options to change the main variable - average price, median price, price per m2
 
 
 

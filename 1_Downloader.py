@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import requests
 from bs4 import BeautifulSoup
 from time import sleep
@@ -16,9 +10,7 @@ from gensim.utils import deaccent
 import random
 import os
 import math
-
-
-# In[2]:
+import platform
 
 
 fileDir = os.path.dirname(os.path.realpath('__file__'))
@@ -28,10 +20,7 @@ if not os.path.exists(newfolder): #if already exists will not be created again
     os.makedirs(newfolder)
 
 
-# ## Establishing functions
-
-# In[3]:
-
+### Establishing functions
 
 def get_soups(links, name):
        '''
@@ -53,10 +42,7 @@ def get_soups(links, name):
            json.dump(dict_, write_file, indent = 4)
 
 
-# ## Downloading
-
-# In[4]:
-
+### Downloading
 
 class DownloaderBezRealitky(): 
     def __init__(self):
@@ -81,8 +67,12 @@ class DownloaderBezRealitky():
         object and parses the html for relevant data. At the end, a nested dictionary (dicts) is created and stored
         as a json file outside of this script.
         '''
-        with open(fileDir + '\\Data\\bezrealitky_links.json', 'r', encoding='utf-8') as f:
-            content = json.load(f)
+        if platform.system() == 'Darwin'
+            with open(fileDir + '/Data/bezrealitky_links.json', 'r', encoding='utf-8') as f:
+                content = json.load(f)
+        else:
+            with open(fileDir + '\\Data\\bezrealitky_links.json', 'r', encoding='utf-8') as f:
+                content = json.load(f)
         soup_list = list(content.values())
         dicts = {}
         counter = 0
@@ -145,32 +135,22 @@ class DownloaderBezRealitky():
                 except IndexError:
                     #counter +=1
                     continue
-        with open(fileDir + '\\Data\\bezrealitky.json', 'w') as write_file: #store data into a json file
-            json.dump(dicts, write_file, indent = 4)
+        if platform.system() == 'Darwin':
+            with open(fileDir + '/Data/bezrealitky.json', 'w') as write_file: #store data into a json file
+                json.dump(dicts, write_file, indent = 4)
+        else:
+            with open(fileDir + '\\Data\\bezrealitky.json', 'w') as write_file: #store data into a json file
+                json.dump(dicts, write_file, indent = 4)
                 
-       
-
-
-# In[5]:
-
-
 a = DownloaderBezRealitky()
 
-
-# In[6]:
-
-
-get_soups(a.hrefs_bezrealitky, fileDir + '\\Data\\bezrealitky_links.json')
-
-
-# In[7]:
-
+#for MAC/PC users
+if platform.system() == 'Darwin':
+    get_soups(a.hrefs_bezrealitky, fileDir + '/Data/bezrealitky_links.json')
+else:
+    get_soups(a.hrefs_bezrealitky, fileDir + '\\Data\\bezrealitky_links.json') 
 
 a.get_data()
-
-
-# In[8]:
-
 
 class DownloaderReality():
     def __init__(self):
@@ -195,8 +175,12 @@ class DownloaderReality():
         object and parses the html for relevant data. At the end, a nested dictionary (dicts) is created and stored
         as a json file outside of this script.
         '''
-        with open(fileDir + '\\Data\\reality_idnes_links.json', 'r', encoding='utf-8') as f:
-            content = json.load(f)
+        if platform.system() == 'Darwin':
+            with open(fileDir + '/Data/reality_idnes_links.json', 'r', encoding='utf-8') as f:
+                content = json.load(f)
+        else:
+            with open(fileDir + '\\Data\\reality_idnes_links.json', 'r', encoding='utf-8') as f:
+                content = json.load(f)
         soup_list = list(content.values())
         dicts = {}
         counter = 0
@@ -254,29 +238,22 @@ class DownloaderReality():
                 except ValueError:
                     #counter += 1
                     continue
-        with open(fileDir + '\\Data\\idnes_reality.json', 'w') as write_file: #store data into a json file
-            json.dump(dicts, write_file, indent = 4)
-
-
-# In[9]:
-
+        if platform.system() == 'Darwin':
+            with open(fileDir + '/Data/idnes_reality.json', 'w') as write_file: #store data into a json file
+                json.dump(dicts, write_file, indent = 4)
+        else:
+            with open(fileDir + '\\Data\\idnes_reality.json', 'w') as write_file: #store data into a json file
+                json.dump(dicts, write_file, indent = 4)
 
 b = DownloaderReality()
 
-
-# In[10]:
-
-
-get_soups(b.hrefs_reality, fileDir + '\\Data\\reality_idnes_links.json')
-
-
-# In[11]:
-
+#for MAC/PC users
+if platform.system() == 'Darwin':
+    get_soups(b.hrefs_reality, fileDir + '/Data/reality_idnes_links.json')
+else:
+    get_soups(b.hrefs_reality, fileDir + '\\Data\\reality_idnes_links.json')
 
 b.get_data()
-
-
-# In[ ]:
 
 
 

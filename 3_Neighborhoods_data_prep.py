@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import pandas as pd
 import numpy as np
 import json
@@ -11,28 +5,28 @@ import os
 import math
 import geopy
 import geopandas as gpd
-
-
-# In[2]:
-
+import platform
 
 fileDir = os.path.dirname(os.path.realpath('__file__'))
-
-
-# In[3]:
-
 
 class NeighborhoodsVisuals(): 
     def __init__(self, geo_filename='Praha.json', df_filename = 'geo_df.pkl'):
         '''
         NeighborhoodsVisuals takes a dataframe containing information about apartments and their geographic location and data (as a JSON file) 
         about the geographic location of Neighborhoods (here of Prague) as input and its methods combine this data, compute average values 
-        for the neighborhoods and store them as a JSON file for later use. As an exeption we just manually downloaded the Praha.json file in this form from http://opendata.praha.eu/
+        for the neighborhoods and store them as a JSON file for later use. Data available at http://opendata.praha.eu/
         '''
-        with open(fileDir + '\\Data\\' + geo_filename, encoding="utf8") as data: 
-                        hoods = json.loads(data.read()) #open neighborhoods data file (JSON format)
+        if platform.system() == 'Darwin':
+            with open(fileDir + '/Data/' + geo_filename, encoding="utf8") as data: 
+                            hoods = json.loads(data.read()) #open neighborhoods data file (JSON format)
+        else:
+            with open(fileDir + '\\Data\\' + geo_filename, encoding="utf8") as data: 
+                            hoods = json.loads(data.read()) #open neighborhoods data file (JSON format) 
         self.gdf = gpd.GeoDataFrame.from_features(hoods["features"])
-        df = pd.read_pickle(fileDir + '\\Data\\' + df_filename) #open individual apartments file (PKL format)
+        if platform.system() == 'Darwin':
+            df = pd.read_pickle(fileDir + '/Data/' + df_filename) #open individual apartments file (PKL format)
+        else:
+            df = pd.read_pickle(fileDir + '\\Data\\' + df_filename) #open individual apartments file (PKL format)
         self.gdf_indv = gpd.GeoDataFrame(df, geometry = gpd.points_from_xy(df.longitude, df.latitude))
         self.avg_prices()
         self.store_merged()
@@ -58,25 +52,14 @@ class NeighborhoodsVisuals():
         '''Merges the geographic-dataframe of neighborhoods object with the neighborhood summary data from avg_prices'''
         merged = pd.merge(self.gdf, self.avg_prices(), on='NAZEV_MC', how='left')
         merged = merged.fillna(value={'Price': 0, 'm2': 0})
-        json_data = json.dumps(json.loads(merged.to_json()))  # Convert to json preferred string-like object 
-        with open(fileDir + '\\Data\\merged_visuals_data.json', 'w') as write_file: #store data into a json file
-            json.dump(json_data, write_file, indent = 4)
-
-
-# In[4]:
-
+        json_data = json.dumps(json.loads(merged.to_json()))# Convert to json preferred string-like object
+        if platform.system() == 'Darwin':
+            with open(fileDir + '/Data/merged_visuals_data.json', 'w') as write_file: #store data into a json file
+                json.dump(json_data, write_file, indent = 4)
+        else:
+            with open(fileDir + '\\Data\\merged_visuals_data.json', 'w') as write_file: #store data into a json file
+                json.dump(json_data, write_file, indent = 4)           
 
 e = NeighborhoodsVisuals()
 
-
-# In[5]:
-
-
 e.avg_prices()
-
-
-# In[ ]:
-
-
-
-
