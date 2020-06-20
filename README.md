@@ -29,5 +29,6 @@ Disclaimer: We have used the data processed by us exclusively for academic purpo
 
 - By following the instructions, the program will guide you through the data generating & visualisation process. 
 
+![Alt text](https://i.postimg.cc/cHqkhSJL/Screenshot-2020-06-20-at-21-51-53.png "Aggregated Interactive Map Example")
 
 
