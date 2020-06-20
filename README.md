@@ -29,6 +29,9 @@ Disclaimer: We have used the data processed by us exclusively for academic purpo
 
 - By following the instructions, the program will guide you through the data generating & visualisation process. 
 
+##### Output Example:
+
 ![Alt text](https://i.postimg.cc/cHqkhSJL/Screenshot-2020-06-20-at-21-51-53.png "Aggregated Interactive Map Example")
+![Alt text](https://i.postimg.cc/MTyPrFcb/Screenshot-2020-06-20-at-21-53-04.png "Granular Map Example")
 
 
