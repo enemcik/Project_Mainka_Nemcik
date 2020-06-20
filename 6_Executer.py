@@ -44,18 +44,18 @@ def user_prompter():
         if txt_a == 'Y':
             print('Great! Here are your ready-to-go maps.')
             exec(open("3_Neighborhoods_data_prep.py").read(), globals())
-            exec(open("4_Granular_map.py").read())
+            exec(open("4_Granular_map.py").read(),globals())
             print('\n')
-            exec(open("5_Neighborhoods_visuals.py").read())
+            exec(open("5_Neighborhoods_visuals.py").read(), globals())
         elif txt_a == 'N':
             print('Let me geocode the data for you. This might take several hours.')
             exec(open("2_Geocoding.py").read(), globals())
                 
             print('Here are your ready-to-go maps.')
             exec(open("3_Neighborhoods_data_prep.py").read(), globals())
-            exec(open("4_Granular_map.py").read())
+            exec(open("4_Granular_map.py").read(),globals())
             print('\n')
-            exec(open("5_Neighborhoods_visuals.py").read())
+            exec(open("5_Neighborhoods_visuals.py").read(),globals())
         else:
             print('Wrong input!')
     elif txt == 'N':
@@ -65,9 +65,9 @@ def user_prompter():
         exec(open("2_Geocoding.py").read(), globals())
         print('Here are your ready-to-go maps.')
         exec(open("3_Neighborhoods_data_prep.py").read(), globals())
-        exec(open("4_Granular_map.py").read())
+        exec(open("4_Granular_map.py").read(),globals())
         print('\n')
-        exec(open("5_Neighborhoods_visuals.py").read()) 
+        exec(open("5_Neighborhoods_visuals.py").read(),globals()) 
     else:
         print('Wrong input!')
 
