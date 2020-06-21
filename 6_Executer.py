@@ -39,15 +39,15 @@ from geopy.extra.rate_limiter import RateLimiter
 def user_prompter():
     print("Welcome to Erik's and Paul's project for JEM207@CharlesUni. Answer the following questions to get the appropriate output.")
     txt = input('Do you already have downloaded data from the specified websites? [Y/N]')
-    if txt == 'Y':
+    if txt == 'Y' or 'y':
         txt_a = input('Do you already have geocoded data? [Y/N]')
-        if txt_a == 'Y':
+        if txt_a == 'Y' or 'y':
             print('Great! Here are your ready-to-go maps.')
             exec(open("3_Neighborhoods_data_prep.py").read(), globals())
             exec(open("4_Granular_map.py").read(),globals())
             print('\n')
             exec(open("5_Neighborhoods_visuals.py").read(), globals())
-        elif txt_a == 'N':
+        elif txt_a == 'N' or 'n':
             print('Let me geocode the data for you. This might take several hours.')
             exec(open("2_Geocoding.py").read(), globals())
                 
@@ -58,7 +58,7 @@ def user_prompter():
             exec(open("5_Neighborhoods_visuals.py").read(),globals())
         else:
             print('Wrong input!')
-    elif txt == 'N':
+    elif txt == 'N' or 'n':
         print('Let me fetch the required data for you. This might take several hours.')
         exec(open("1_Downloader.py").read(), globals())
         print('Data downloaded. Geocoding...')
