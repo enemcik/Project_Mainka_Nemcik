@@ -4,7 +4,6 @@ recommend to only do this. The reason is that you will not be able to understand
 you need a couple of packages installed to execute all the scripts, some of which might have conflicts with one another, and finally 
 the process will probably take a couple of hours to execute everything. We therefore recommend to rather execute each script by itself, as
 they are all self sufficient in the sense that they save a file in your working directory which then can be processed by the following script.
-
 We have created a function that will guide the user via terminal commands through the visualisation process.
 '''
 #visualisation
@@ -57,15 +56,12 @@ def user_prompter():
             print('\nGreat! Here are your ready-to-go maps.\n')
             exec(open("3_Neighborhoods_data_prep.py").read(), globals())
             exec(open("4_Granular_map.py").read(),globals())
-            print('\n')
-            exec(open("5_Neighborhoods_visuals.py").read(), globals())
         elif txt_a in ('N','n'):
             print('\nLet me geocode the data for you. This might take several hours.')
             exec(open("2_Geocoding.py").read(), globals())             
             print('\nHere are your ready-to-go maps.')
             exec(open("3_Neighborhoods_data_prep.py").read(), globals())
             exec(open("4_Granular_map.py").read(),globals())
-            exec(open("5_Neighborhoods_visuals.py").read(),globals())
     elif txt  in ('N','n'):
         print('\nLet me fetch the required data for you. This might take several hours.')
         exec(open("1_Downloader.py").read(), globals())
@@ -74,8 +70,6 @@ def user_prompter():
         print('\nHere are your ready-to-go maps.')
         exec(open("3_Neighborhoods_data_prep.py").read(), globals())
         exec(open("4_Granular_map.py").read(),globals())
-        print('\n')
-        exec(open("5_Neighborhoods_visuals.py").read(),globals()) 
     while True:
         txt_b = input('\nDo you want to open the granular map now in your browser? [Y/N]')
         if txt_b not in ('Y', 'y', 'N', 'n'):
@@ -98,4 +92,3 @@ def user_prompter():
         print('\nExiting programm now')
 
 user_prompter()
-
