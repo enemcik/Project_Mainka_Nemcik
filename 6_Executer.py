@@ -4,7 +4,6 @@ recommend to only do this. The reason is that you will not be able to understand
 you need a couple of packages installed to execute all the scripts, some of which might have conflicts with one another, and finally 
 the process will probably take a couple of hours to execute everything. We therefore recommend to rather execute each script by itself, as
 they are all self sufficient in the sense that they save a file in your working directory which then can be processed by the following script.
-
 We have created a function that will guide the user via terminal commands through the visualisation process.
 '''
 #visualisation
