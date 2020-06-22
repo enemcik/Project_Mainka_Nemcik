@@ -67,7 +67,7 @@ class DownloaderBezRealitky():
         object and parses the html for relevant data. At the end, a nested dictionary (dicts) is created and stored
         as a json file outside of this script.
         '''
-        if platform.system() == 'Darwin'
+        if platform.system() == 'Darwin':
             with open(fileDir + '/Data/bezrealitky_links.json', 'r', encoding='utf-8') as f:
                 content = json.load(f)
         else:

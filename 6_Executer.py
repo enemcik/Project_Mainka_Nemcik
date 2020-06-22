@@ -64,7 +64,7 @@ def user_prompter():
             exec(open("4_Granular_map.py").read(),globals())
     elif txt  in ('N','n'):
         print('\nLet me fetch the required data for you. This might take several hours.')
-        exec(open("1_Downloader.py").read(), globals())
+        exec(open("1_Downloader.py", encoding="utf8").read(), globals())
         print('\nData downloaded. Geocoding...')
         exec(open("2_Geocoding.py").read(), globals())
         print('\nHere are your ready-to-go maps.')
