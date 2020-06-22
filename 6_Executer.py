@@ -36,41 +36,66 @@ import geopy
 import geopandas as gpd
 from geopy.extra.rate_limiter import RateLimiter
 
+PORT=8080
+
 def user_prompter():
-    print("Welcome to Erik's and Paul's project for JEM207@CharlesUni. Answer the following questions to get the appropriate output.")
-    txt = input('Do you already have downloaded data from the specified websites? [Y/N]')
-    if txt == 'Y' or 'y':
-        txt_a = input('Do you already have geocoded data? [Y/N]')
-        if txt_a == 'Y' or 'y':
-            print('Great! Here are your ready-to-go maps.')
+    print("\nWelcome to Erik's and Paul's project for JEM207@CharlesUni. Answer the following questions to get the appropriate output.")
+    while True:
+        txt = input('\nDo you already have downloaded data from the specified websites? [Y/N]')
+        if txt not in ('Y', 'y', 'N', 'n'):
+            print("\nNot an appropriate choice. Please input Y if you already have downloaded data and otherwise input N.")
+        else:
+            break
+    if txt in ('Y','y'):
+        while True:
+            txt_a = input('\nDo you already have geocoded data? [Y/N]')
+            if txt_a not in ('Y', 'y', 'N', 'n'):
+                print("\nNot an appropriate choice. Please input Y if you already have geocoded data and otherwise input N.")
+            else:
+                break
+        if txt_a in ('Y','y'):
+            print('\nGreat! Here are your ready-to-go maps.\n')
             exec(open("3_Neighborhoods_data_prep.py").read(), globals())
             exec(open("4_Granular_map.py").read(),globals())
             print('\n')
             exec(open("5_Neighborhoods_visuals.py").read(), globals())
-        elif txt_a == 'N' or 'n':
-            print('Let me geocode the data for you. This might take several hours.')
-            exec(open("2_Geocoding.py").read(), globals())
-                
-            print('Here are your ready-to-go maps.')
+        elif txt_a in ('N','n'):
+            print('\nLet me geocode the data for you. This might take several hours.')
+            exec(open("2_Geocoding.py").read(), globals())             
+            print('\nHere are your ready-to-go maps.')
             exec(open("3_Neighborhoods_data_prep.py").read(), globals())
             exec(open("4_Granular_map.py").read(),globals())
-            print('\n')
             exec(open("5_Neighborhoods_visuals.py").read(),globals())
-        else:
-            print('Wrong input!')
-    elif txt == 'N' or 'n':
-        print('Let me fetch the required data for you. This might take several hours.')
+    elif txt  in ('N','n'):
+        print('\nLet me fetch the required data for you. This might take several hours.')
         exec(open("1_Downloader.py").read(), globals())
-        print('Data downloaded. Geocoding...')
+        print('\nData downloaded. Geocoding...')
         exec(open("2_Geocoding.py").read(), globals())
-        print('Here are your ready-to-go maps.')
+        print('\nHere are your ready-to-go maps.')
         exec(open("3_Neighborhoods_data_prep.py").read(), globals())
         exec(open("4_Granular_map.py").read(),globals())
         print('\n')
         exec(open("5_Neighborhoods_visuals.py").read(),globals()) 
+    while True:
+        txt_b = input('\nDo you want to open the granular map now in your browser? [Y/N]')
+        if txt_b not in ('Y', 'y', 'N', 'n'):
+            print("\nNot an appropriate choice. Please input Y if you want to open the granular map now in your browser and otherwise input N.")
+        else:
+            break
+    if txt_b in ('Y','y'):
+            os.system("folium_map.html")
     else:
-        print('Wrong input!')
+        pass
+    while True:
+        txt_c = input('\nDo you want to open the neighborhoods map now in your browser? [Y/N]')
+        if txt_c not in ('Y', 'y', 'N', 'n'):
+            print("\nNot an appropriate choice. Please input Y if you want to open the neighborhoods map now in your browser and otherwise input N.")
+        else:
+            break
+    if txt_c in ('Y','y'):
+            os.system(f"bokeh serve --show --port {PORT} 5_Neighborhoods_visuals.py")
+    else:
+        print('\nExiting programm now')
 
 user_prompter()
-
 
