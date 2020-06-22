@@ -114,8 +114,8 @@ print('Here is your interactive map of Prague neighborhoods.')
 output_notebook()
 show(p)
 
-
-#bokeh serve --show Downloader.ipynb - in anaconda prompt shows interactive map on a local server - options to change the main variable - average price, median price, price per m2
+PORT=8080
+os.system(f"bokeh serve --show --port {PORT} 5_Neighborhoods_visuals.py")
 
 
 

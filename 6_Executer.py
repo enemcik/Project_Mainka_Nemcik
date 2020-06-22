@@ -56,15 +56,12 @@ def user_prompter():
             print('\nGreat! Here are your ready-to-go maps.\n')
             exec(open("3_Neighborhoods_data_prep.py").read(), globals())
             exec(open("4_Granular_map.py").read(),globals())
-            print('\n')
-            exec(open("5_Neighborhoods_visuals.py").read(), globals())
         elif txt_a in ('N','n'):
             print('\nLet me geocode the data for you. This might take several hours.')
             exec(open("2_Geocoding.py").read(), globals())             
             print('\nHere are your ready-to-go maps.')
             exec(open("3_Neighborhoods_data_prep.py").read(), globals())
             exec(open("4_Granular_map.py").read(),globals())
-            exec(open("5_Neighborhoods_visuals.py").read(),globals())
     elif txt  in ('N','n'):
         print('\nLet me fetch the required data for you. This might take several hours.')
         exec(open("1_Downloader.py").read(), globals())
@@ -73,8 +70,6 @@ def user_prompter():
         print('\nHere are your ready-to-go maps.')
         exec(open("3_Neighborhoods_data_prep.py").read(), globals())
         exec(open("4_Granular_map.py").read(),globals())
-        print('\n')
-        exec(open("5_Neighborhoods_visuals.py").read(),globals()) 
     while True:
         txt_b = input('\nDo you want to open the granular map now in your browser? [Y/N]')
         if txt_b not in ('Y', 'y', 'N', 'n'):
