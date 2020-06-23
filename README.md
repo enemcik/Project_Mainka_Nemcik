@@ -3,7 +3,7 @@
 ## For Charles University of Prague, Faculty of Social Sciences - Data Processing in Python (JEM207)
 
 ### Data source: bezrealitky.cz & reality.idnes.cz 
-Disclaimer: We have used the data processed by us exclusively for academic purposes and have  not received any monetary gain from it. Furthermore, the data represents only a snapshot of the rental situation in Prague, that is, at the time we scraped it (June 2020).
+Disclaimer: We have used the data processed by us exclusively for academic purposes and have  not received any monetary gain from it. Furthermore, the data represents only a snapshot of the rental situation in Prague, that is, at the time we scraped it (June 22, 2020).
 
 ### Procedure: 
 1. As a first step we scraped the data from bezrealitky.cz & reality.idnes.cz and stored it. This action is performed by the "1_Downloader.py" script. This step may take some time (~30-90 min). Scraped apartment information are stored in a Data folder in a json format. 
@@ -15,6 +15,13 @@ Disclaimer: We have used the data processed by us exclusively for academic purpo
 4. We visualise our data creating a granular map by using folium maps, on which each apartment is displayed on an interactive map of Prague. This is carried out by the "4_Granular_Map.py" script.
 
 5. An interactive map is created in which differences in average, median and average square metre prices for the different neighbourhoods in Prague are illustrated by colour variations. The "5_Neighborhoods_visuals.py" script performs this action. In order to see the full benefits of this map, please run the script on a local server by executing #bokeh serve --show 5_Neighborhoods_visuals.py". Full output cannot be seen in a simple console. 
+
+#### Functionality
+- Data scraping (progress bar), data manipulation (progress bar)
+- Geocoding (Nomatim API, geopandas, location aggregation & manipulation)
+- Geovisualization (granular map, interactive map)
+- Executer (detailed user interface), can be executed from a command prompt/interpreter by running "python 6_Executer" in an environment with appropriate libraries
+- Adapted to both Mac OS/Windows 
 
 #### Additional files and information:
 - To execute all the scripts you will need multiple packages. Most importantly geopandas, which might cause problems with some other dependencies. Therefore, we recommend, in case you don't have geopandas yet, to create a new environment and install all the required packages for this project there. 
@@ -29,9 +36,11 @@ Disclaimer: We have used the data processed by us exclusively for academic purpo
 
 - By following the instructions, the program will guide you through the data generating & visualisation process. 
 
-##### Output Example:
+#### Output Example:
 
 ![Alt text](https://i.postimg.cc/cHqkhSJL/Screenshot-2020-06-20-at-21-51-53.png "Aggregated Interactive Map Example")
 ![Alt text](https://i.postimg.cc/MTyPrFcb/Screenshot-2020-06-20-at-21-53-04.png "Granular Map Example")
+
+
 
 

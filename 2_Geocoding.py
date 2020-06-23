@@ -7,7 +7,9 @@ import geopy
 import geopandas as gpd
 from geopy.extra.rate_limiter import RateLimiter
 import platform
+import warnings
 
+warnings.filterwarnings('ignore')
 fileDir = os.path.dirname(os.path.realpath('__file__'))
 
 def data_combine(*args):
@@ -16,7 +18,7 @@ def data_combine(*args):
     data = {}
     #input example - 'idnes_reality.json', 'bezrealitky.json'
     for arg in args:
-        if system.platform() == 'Darwin':
+        if platform.system() == 'Darwin':
             with open(fileDir + '/Data/' + arg) as json_file:
                 file_ = json.load(json_file)
                 big_dict.append(file_)

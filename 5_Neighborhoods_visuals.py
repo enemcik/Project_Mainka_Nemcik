@@ -116,10 +116,5 @@ show(p)
 
 PORT=8080
 os.system(f"bokeh serve --show --port {PORT} 5_Neighborhoods_visuals.py")
-<<<<<<< HEAD
-
-=======
->>>>>>> 8f9b092cebc3110e039f0c9d38b249db6863273b
-
 
 

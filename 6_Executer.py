@@ -34,6 +34,10 @@ from bokeh.layouts import widgetbox, row, column
 import geopy
 import geopandas as gpd
 from geopy.extra.rate_limiter import RateLimiter
+import platform
+import webbrowser
+
+fileDir = os.path.dirname(os.path.realpath('__file__'))
 
 PORT=8080
 
@@ -77,7 +81,7 @@ def user_prompter():
         else:
             break
     if txt_b in ('Y','y'):
-            os.system("folium_map.html")
+        os.system('folium_map.html')
     else:
         pass
     while True:
@@ -87,8 +91,9 @@ def user_prompter():
         else:
             break
     if txt_c in ('Y','y'):
-            os.system(f"bokeh serve --show --port {PORT} 5_Neighborhoods_visuals.py")
+        os.system(f"bokeh serve --show --port {PORT} 5_Neighborhoods_visuals.py")
     else:
+        exec(open("5_Neighborhoods_visuals.py").read(),globals())
         print('\nExiting programm now')
 
 user_prompter()
