@@ -14,7 +14,7 @@ Disclaimer: We have used the data processed by us exclusively for academic purpo
 
 4. We visualise our data creating a granular map by using folium maps, on which each apartment is displayed on an interactive map of Prague. This is carried out by the "4_Granular_Map.py" script.
 
-5. An interactive map is created in which differences in average, median and average square metre prices for the different neighbourhoods in Prague are illustrated by colour variations. The "5_Neighborhoods_visuals.py" script performs this action. In order to see the full benefits of this map, please run the script on a local server by executing #bokeh serve --show 5_Neighborhoods_visuals.py". Full output cannot be seen in a simple console. 
+5. An interactive map is created in which differences in average, median and average square metre prices for the different neighbourhoods in Prague are illustrated by colour variations. The "5_Neighborhoods_visuals.py" script performs this action. In order to see the full benefits of this map, please run the script on a local server by executing #bokeh serve --show 5_Neighborhoods_visuals.py". Full output cannot be seen in a simple console (like Jupiter Notebook). 
 
 #### Functionality
 - Data scraping (progress bar), data manipulation (progress bar)
@@ -28,7 +28,7 @@ Disclaimer: We have used the data processed by us exclusively for academic purpo
 
 - Furthermore, the "Downloader.ipynb" is a Jupyter notebook file which contains all the five scripts descript above. Note however, that the "Downloader.ipynb" is not completly up-to-date compared to the .py files (although the differences are marginal, mostly contains less descriptive docstrings and the code is not as pretty prepared as in the .py files).
 
-- The files in the Data folder contain the outputs of the distinct scripts, therefore it is possible to execute the scripts in different order as described above, utilising the provided data. Note however, that this data is based on a scrape on the 20.06.2020 and it will not be automatically updated, therefore you would be working with outdated data.
+- The files in the Data folder contain the outputs of the distinct scripts, therefore it is possible to execute the scripts in different order as described above, utilising the provided data. Note however, that this data is based on a scrape on the 22.06.2020 and it will not be automatically updated, therefore you would be working with outdated data.
 
 #### Executer
 
