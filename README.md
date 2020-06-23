@@ -21,7 +21,7 @@ Disclaimer: We have used the data processed by us exclusively for academic purpo
 - Geocoding (Nomatim API, geopandas, location aggregation & manipulation)
 - Geovisualization (granular map, interactive map)
 - Executer (detailed user interface), can be executed from a command prompt/interpreter by running "python 6_Executer" in an environment with appropriate libraries
-- Adapted to both Mac OS/Windows 
+- Data manipulation dapted to both Mac OS/Windows 
 
 #### Additional files and information:
 - To execute all the scripts you will need multiple packages. Most importantly geopandas, which might cause problems with some other dependencies. Therefore, we recommend, in case you don't have geopandas yet, to create a new environment and install all the required packages for this project there. 
